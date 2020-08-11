@@ -551,13 +551,14 @@ java_EXTRA_DIST=                                                                
   java/util/src/test/java/com/google/protobuf/util/FieldMaskTreeTest.java          \
   java/util/src/test/java/com/google/protobuf/util/FieldMaskUtilTest.java          \
   java/util/src/test/java/com/google/protobuf/util/JsonFormatTest.java             \
-  java/util/src/test/java/com/google/protobuf/util/StructsTest.java                 \
+  java/util/src/test/java/com/google/protobuf/util/StructsTest.java                \
   java/util/src/test/java/com/google/protobuf/util/TimeUtilTest.java               \
   java/util/src/test/java/com/google/protobuf/util/ValuesTest.java                 \
   java/util/src/test/proto/com/google/protobuf/util/json_test.proto
 
 objectivec_EXTRA_DIST=                                                       \
   objectivec/.clang-format                                                   \
+  objectivec/BUILD                                                           \
   objectivec/DevTools/check_version_stamps.sh                                \
   objectivec/DevTools/compile_testing_protos.sh                              \
   objectivec/DevTools/full_mac_build.sh                                      \
@@ -767,43 +768,28 @@ php_EXTRA_DIST=                                                       \
   composer.json                                                       \
   php/README.md                                                       \
   php/composer.json                                                   \
+  php/ext/google/protobuf/arena.c                                     \
+  php/ext/google/protobuf/arena.h                                     \
   php/ext/google/protobuf/array.c                                     \
-  php/ext/google/protobuf/builtin_descriptors.inc                     \
+  php/ext/google/protobuf/array.h                                     \
+  php/ext/google/protobuf/bundled_php.h                               \
   php/ext/google/protobuf/config.m4                                   \
+  php/ext/google/protobuf/convert.c                                   \
+  php/ext/google/protobuf/convert.h                                   \
   php/ext/google/protobuf/def.c                                       \
-  php/ext/google/protobuf/encode_decode.c                             \
+  php/ext/google/protobuf/def.h                                       \
+  php/ext/google/protobuf/make-preload.php                            \
   php/ext/google/protobuf/map.c                                       \
+  php/ext/google/protobuf/map.h                                       \
   php/ext/google/protobuf/message.c                                   \
+  php/ext/google/protobuf/message.h                                   \
+  php/ext/google/protobuf/names.c                                     \
+  php/ext/google/protobuf/names.h                                     \
   php/ext/google/protobuf/package.xml                                 \
+  php/ext/google/protobuf/php-upb.c                                   \
+  php/ext/google/protobuf/php-upb.h                                   \
   php/ext/google/protobuf/protobuf.c                                  \
   php/ext/google/protobuf/protobuf.h                                  \
-  php/ext/google/protobuf/storage.c                                   \
-  php/ext/google/protobuf/type_check.c                                \
-  php/ext/google/protobuf/upb.c                                       \
-  php/ext/google/protobuf/upb.h                                       \
-  php/ext/google/protobuf/utf8.c                                      \
-  php/ext/google/protobuf/utf8.h                                      \
-  php/ext/google/protobuf2/arena.c                                    \
-  php/ext/google/protobuf2/arena.h                                    \
-  php/ext/google/protobuf2/array.c                                    \
-  php/ext/google/protobuf2/array.h                                    \
-  php/ext/google/protobuf2/bundled_php.h                              \
-  php/ext/google/protobuf2/config.m4                                  \
-  php/ext/google/protobuf2/convert.c                                  \
-  php/ext/google/protobuf2/convert.h                                  \
-  php/ext/google/protobuf2/def.c                                      \
-  php/ext/google/protobuf2/def.h                                      \
-  php/ext/google/protobuf2/make-preload.php                           \
-  php/ext/google/protobuf2/map.c                                      \
-  php/ext/google/protobuf2/map.h                                      \
-  php/ext/google/protobuf2/message.c                                  \
-  php/ext/google/protobuf2/message.h                                  \
-  php/ext/google/protobuf2/names.c                                    \
-  php/ext/google/protobuf2/names.h                                    \
-  php/ext/google/protobuf2/php-upb.c                                  \
-  php/ext/google/protobuf2/php-upb.h                                  \
-  php/ext/google/protobuf2/protobuf.c                                 \
-  php/ext/google/protobuf2/protobuf.h                                 \
   php/generate_descriptor_protos.sh                                   \
   php/phpunit.xml                                                     \
   php/release.sh                                                      \
